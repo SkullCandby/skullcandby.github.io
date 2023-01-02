@@ -1,14 +1,26 @@
-header, #logoAndCompany{
+/* Contact page CSS */
 
+#logoAndCompany {
+    font-family: 'Notable';
     display: flex;
     flex-direction: column;
     height: 350px;
     margin-left: 15px;
-
-
-
 }
 
+h2, h1 {
+    font-family: 'Notable';
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #181818;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    word-spacing: 1em;
+ }
 footer {
     margin-top: 100px;
 }
@@ -26,10 +38,16 @@ footer {
     width: 250px;
     height: 160px;
     border-radius: 16px;
+
+    border-color: yellow;
+    border-style: solid;
+    border-width: 1px;
 }
 ul {
     list-style-type: none;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     gap: 25px;
     width: 800px;
 
@@ -37,7 +55,7 @@ ul {
 
 .li {
     padding: 15px;
-    color: antiquewhite;
+    color: #faebd7;
 }
 
 section {
@@ -54,12 +72,7 @@ section {
 
 }
 
-body {
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 1em;
-    background: #181818;
-    color: #FFFFFF;
-}
+
 table, th, td {
     border: 1px solid;
 }
@@ -78,9 +91,12 @@ table, th, td {
     border-radius: 15px;
     padding-top: 0;
     opacity: 50%;
+    z-index: 9999;
 }
 
 .nav-bar {
+
+    text-transform: uppercase;
     width: 100px;
     display: flex;
     justify-content: space-between;
@@ -95,7 +111,6 @@ table, th, td {
 .menu {display: flex;}
 .menu .li {padding-left: 1px;}
 .menu .li a {
-    display: inline-block;
     text-decoration: none;
     color: #FFF;
     text-align: center;
@@ -187,6 +202,13 @@ form {
     margin-top: 0;
 }
 #check {display: none;}
+
+#menu_pos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
 @media (max-width: 1240px) {
     section {
         margin-top: 150px
@@ -215,9 +237,9 @@ form {
         width: 0;
     }
     #coockie {
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 40%;
+        margin-left: 0;
+        margin-right: 20%;
+        width: 60%;
     }
     header {
         flex-direction: column;
@@ -256,7 +278,7 @@ form {
 
     }
     .li {
-        color: antiquewhite;
+        color: #faeba6;
         font-size: 1em;
         padding: 0 0;
 
@@ -329,7 +351,24 @@ form {
     .menu .li a {padding: 10px;}
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {left: 0;}
+    h2 h1 {
+        font-size: 0.5em;
+    }
+    #menu_pos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 
-
+    }
 }
 
+.linkedin:hover {
+    color: blue;
+}
+.linkedin:active {
+  color: green;
+}
+
+span + p {
+    color: green;
+}
