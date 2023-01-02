@@ -1,16 +1,31 @@
-header, #logoAndCompany{
+/* Pricing page CSS */
 
+#logoAndCompany {
+    font-family: 'Notable';
     display: flex;
     flex-direction: column;
     height: 350px;
+
     margin-left: 15px;
-
-
-
 }
+
+h2, h1 {
+    font-family: 'Notable';
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #181818;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    word-spacing: 1em;
+ }
 footer {
     margin-top: 100px;
 }
+
 #img_1 {
     width: 100%;
 }
@@ -25,10 +40,16 @@ footer {
     width: 250px;
     height: 160px;
     border-radius: 16px;
+
+    border-color: yellow;
+    border-style: solid;
+    border-width: 1px;
 }
 ul {
     list-style-type: none;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     gap: 25px;
     width: 800px;
 
@@ -53,17 +74,10 @@ ul {
 }
 
 .scaled_image {
-
     height: 350px;
-
 }
 
-body {
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 1em;
-    background: #181818;
-    color: #FFFFFF;
-}
+
 table, th, td {
     border: 1px solid;
 }
@@ -84,9 +98,12 @@ table {
     border-radius: 15px;
     padding-top: 0;
     opacity: 50%;
+    z-index: 9999;
+
 }
 
 .nav-bar {
+    text-transform: uppercase;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -95,12 +112,10 @@ table {
     position: relative;
     background-color: #181818;
     padding: 12px 0;
-
 }
 .menu {display: flex;}
 .menu .li {margin-top: 40px}
 .menu .li a {
-    display: inline-block;
     text-decoration: none;
     color: #FFF;
     text-align: center;
@@ -135,7 +150,7 @@ table {
     top: 20px;
     left: 20px;
 }
-#check {display: block; z-index: 1000}
+#check {display: block; z-index: 1000;}
 
 #product_1 {
     float: left;
@@ -158,6 +173,42 @@ table {
     float: right;
 }
 #check {display: none;}
+
+aside > p {
+    color: #964B00;
+}
+span + p {
+    color: green;
+}
+thead {
+    background: #FFC72B;
+    color: black;
+    font-weight: bold;
+}
+
+.linkedin:hover {
+    color: blue;
+}
+.linkedin:active {
+  color: green;
+}
+tr td:first-child {
+    background-color: #FF0;
+}
+table {
+    color: green;
+}
+tr {
+    background: #FFF;
+}
+tr:nth-child(2n) {
+  background-color: #CFF;
+}
+#menu_pos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+}
 @media (max-width: 1240px) {
 
     #product_3 {
@@ -220,10 +271,39 @@ table {
         right: 5%;
         width: 90%;
     }
+    thead {
+        background: #FFC72B;
+        color: black;
+        font-weight: bold;
+    }
 
+
+
+    .linkedin:hover {
+        color: blue;
+    }
+    .linkedin:active {
+      color: green;
+    }
+    tr td:first-child {
+        background-color: #FF0;
+    }
+    table {
+        color: green;
+    }
+    tr {
+        background: #FFF;
+    }
+    tr:nth-child(2n) {
+      background-color: #CFF;
+      }
 }
 @media (max-width: 480px) {
-
+    #menu_pos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
     header {
         gap: 5px;
         width: 250px;
@@ -311,6 +391,53 @@ table {
     .menu li a {padding: 10px;}
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {left: 0;}
+    thead {
+        background: #FFC72B;
+        color: black;
+        font-weight: bold;
+    }
 
 
+
+    .linkedin:hover {
+        color: blue;
+    }
+    .linkedin:active {
+      color: green;
+    }
+    tr td:first-child {
+        background-color: #FF0;
+    }
+    table {
+        color: green;
+    }
+    tr {
+        background: #FFF;
+    }
+    tr:nth-child(2n) {
+      background-color: #CFF;
+    }
+}
+thead {
+    background: #FFC72B;
+    color: black;
+    font-weight: bold;
+}
+.linkedin:hover {
+    color: blue;
+}
+.linkedin:active {
+  color: green;
+}
+tr td:first-child {
+    background-color: #FF0;
+}
+table {
+    color: green;
+}
+tr {
+    background: #FFF;
+}
+tr:nth-child(2n) {
+  background-color: #CFF;
 }
