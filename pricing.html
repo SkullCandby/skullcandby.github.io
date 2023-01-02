@@ -1,101 +1,106 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Gleb Meshkov" />
+    <meta name="description" content="This website was made as a web markup assignment for Inholland University of Applied Science.  " />
+    <meta name="keywords" content="Inholland, Web Markup, Sports, Applied Sciend, AR" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pricing</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/pricing.css" rel="stylesheet">
-<header>
+<link href="css/pricing.css" rel="stylesheet" type="text/css">
+<header style="width: 100%">
+    <article id="menu_pos">
         <article id="logoAndCompany" style="flex-direction: column; gap: 5px;">
-        <img src="img/img_4.png" id="logo" alt="">
-        <h1 style="margin-bottom: 5px">Sport technology</h1>
-        <h2 style="margin-top: 0;">We provide data</h2>
+            <img title="logo" src="img/img_4.png" id="logo" alt="">
+            <h1 style="margin-bottom: 5px">Sport technology</h1>
+            <h2 style="margin-top: 0;">We provide data</h2>
+
+        </article>
+        <nav>
+            <ul class='nav-bar'>
+                <li class="li" style="display: flex; justify-content: space-around">
+                    <input type='checkbox' id='check'>
+                    <span class="menu">
+                        <a class="li" href="index.html">Home</a>
+                        <a class="li" href="pricing.html" style="background: chocolate">Pricing</a>
+                        <a class="li" href="contact.html"><strong>Contact</strong></a>
+                        <a class="li" href="product.html">Products</a>
+                        <label for="check" class="open-menu">≡</label>
+                    </span>
+                </li>
+
+                <li class="li">
+                    <label for="check" class="close-menu">≡</label>
+                </li>
+            </ul>
+        </nav>
     </article>
-    <nav>
-
-        <ul class='nav-bar'>
-            <li class="li" style="display: flex; justify-content: space-around">
-                <input type='checkbox' id='check'>
-                <span class="menu" >
-
-                    <a class="li" href="index.html">Home</a>
-                    <a class="li" href="pricing.html" style="background: chocolate">Pricing</a>
-                    <a class="li" href="contact.html">Contact</a>
-                    <a class="li" href="product.html">Products</a>
-                    <label for="check" class="open-menu">≡</label>
-
-                </span>
-            </li>
-
-
-            <li class="li">
-                <label for="check" class="close-menu">≡</label>
-            </li>
-        </ul>
-
-    </nav>
 </header>
 
 <section id="section">
     <table>
+        <thead>
         <tr>
-            <td>Name</td>
-            <td>Price</td>
-            <td>Company</td>
-            <td>Year</td>
-            <td>Garanty</td>
+            <td><em>Name</em></td>
+            <td><em>Price</em></td>
+            <td><em>Company</em></td>
+            <td><em>Year</em></td>
+            <td><em>Garanty</em></td>
         </tr>
+        </thead>
         <tr>
             <td>Z VR Backpack G2 Workstation</td>
-            <td>&euro; 1.999,00</td>
+            <td id="td1">&euro; 1.999,00</td>
             <td>HP</td>
             <td>2021</td>
             <td>2 years</td>
         </tr>
         <tr>
             <td>Quest 2</td>
-            <td>&euro; 449</td>
+            <td id="td2">&euro; 449</td>
             <td>Meta</td>
             <td>2019</td>
             <td>1 year</td>
         </tr>
         <tr>
             <td>M2 Pro</td>
-            <td>&euro; 65,99</td>
-            <td>BOBOVR </td>
+            <td id="td3">&euro; 65,99</td>
+            <td>BOBOVR</td>
             <td>2020</td>
             <td>30 days</td>
         </tr>
         <tr>
             <td>VIVE Flow</td>
-            <td>&euro; 554</td>
-            <td>HTC </td>
+            <td id="td4">&euro; 554</td>
+            <td>HTC</td>
             <td>2020</td>
             <td>6 months</td>
         </tr>
         <tr>
             <td>VR Headset charge kast 20</td>
-            <td>&euro; 1595</td>
-            <td>Zioxi </td>
+            <td id="td5">&euro; 1595</td>
+            <td>Zioxi</td>
             <td>2021</td>
             <td>1 year</td>
         </tr>
         <tr>
             <td>Vive Pro 2 Full Kit</td>
-            <td>&euro; 1349</td>
-            <td>HTC </td>
+            <td id="td6">&euro; 1349</td>
+            <td>HTC</td>
             <td>2022</td>
             <td>7 months</td>
         </tr>
         <tr>
             <td>Ignite 3</td>
-            <td>&euro; 329</td>
-            <td>Polar </td>
+            <td id="td7">&euro; 329</td>
+            <td>Polar</td>
             <td>2021</td>
             <td>30 days</td>
         </tr>
@@ -116,14 +121,14 @@
         <tr>
             <td>Vantage V2</td>
             <td>&euro; 499</td>
-            <td>Polar </td>
+            <td>Polar</td>
             <td>2021</td>
             <td>2 months</td>
         </tr>
         <tr>
             <td>Verity Sense</td>
             <td>&euro; 89</td>
-            <td>Polar </td>
+            <td>Polar</td>
             <td>2022</td>
             <td>6 months</td>
         </tr>
@@ -151,7 +156,7 @@
         <tr>
             <td>H9</td>
             <td>&euro; 59</td>
-            <td>Polar </td>
+            <td>Polar</td>
             <td>2022</td>
             <td>2 mounths</td>
         </tr>
@@ -172,7 +177,7 @@
         <tr>
             <td>Exos 2</td>
             <td>&euro; 14</td>
-            <td>Trust </td>
+            <td>Trust</td>
             <td>2021</td>
             <td>1 mounth</td>
         </tr>
@@ -184,33 +189,34 @@
             <td>15 days;</td>
         </tr>
     </table>
-<section id="asides">
-    <aside id="product_1">
-        <article >
-            <a href="https://www.inholland.nl/">
-                <img class="scaled_image"  src="img/img_12.png" id="img_1" alt="">
-            </a>
-        </article>
-    </aside>
-    <aside id="product_2">
-        <article >
-            <a href="https://www.inholland.nl/">
-                <img class="scaled_image"  src="img/img_13.png" id="img_2" alt="">
-            </a>
-        </article>
-    </aside>
-    <aside id="product_3">
-        <article >
-            <a href="https://www.inholland.nl/">
-                <img class="scaled_image"  src="img/img_14.png" id="img_3" alt="">
-            </a>
-        </article>
-    </aside>
-</section>
+    <section id="asides">
+        <aside id="product_1">
+            <article>
+                <a href="https://www.inholland.nl/">
+                    <img title="skier" class="scaled_image" src="img/img_12.png" id="img_1" alt="">
+                </a>
+            </article>
+        </aside>
+        <aside id="product_2">
+            <article>
+                <a href="https://www.inholland.nl/">
+                    <img title="baseball player" class="scaled_image" src="img/img_13.png" id="img_2" alt="">
+                </a>
+            </article>
+        </aside>
+        <aside id="product_3">
+            <article>
+                <a href="https://www.inholland.nl/">
+                    <img title="runner" class="scaled_image" src="img/img_14.png" id="img_3" alt="">
+                </a>
+            </article>
+        </aside>
+    </section>
 </section>
 
 <footer style="height: 100px">
-    <p >&#169; 2022 Gleb Meshkov</p>
+    <span></span>
+    <p>&copy; 2022 <a class="linkedin" rel="author" href="https://www.linkedin.com/in/gleb-meshkov-baba8224a/"> Gleb Meshkov</a></p>
 </footer>
 <section id="coockie">
     <p>Cookie statement</p>
