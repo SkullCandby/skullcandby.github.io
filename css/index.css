@@ -271,6 +271,11 @@ header {
 
 }
 @media (max-width: 480px) {
+    #logo {
+        width: 150px;
+        height: 100px;
+    }
+
     #menu_pos {
         display: flex;
         flex-direction: row;
