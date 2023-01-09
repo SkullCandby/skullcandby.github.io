@@ -9,90 +9,91 @@
     <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-<body>
+<body class="contact_body">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300&amp;display=swap" rel="stylesheet">
-<link href="css/contact.css" rel="stylesheet" type="text/css">
-<header style="width: 100%">
-    <article id="menu_pos">
-        <article id="logoAndCompany" style="flex-direction: column; gap: 5px;">
-            <img title="logo" src="img/img_4.png" id="logo" alt="">
-            <h1 style="margin-bottom: 5px">Sport technology</h1>
-            <h2 style="margin-top: 0;">We provide data</h2>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<header style="width: 100%" class="contact_header">
+    <article id="contact_menu_pos">
+        <article id="contact_contact_logoAndCompany" style="flex-direction: column; gap: 5px;">
+            <img title="logo" src="img/img_4.png" id="contact_logo" alt="">
+            <h1 class="contact_h1" style="margin-bottom: 5px">Sport technology</h1>
+            <h2 class="contact_h2" style="margin-top: 0;">We provide data</h2>
 
         </article>
         <nav>
-            <ul class='nav-bar'>
-                <li class="li" style="display: flex; justify-content: space-around">
-                    <input type='checkbox' id='check'>
-                    <span class="menu">
-                        <a class="li" href="index.html">Home</a>
-                        <a class="li" href="pricing.html">Pricing</a>
-                        <a class="li" href="contact.html" style="background: chocolate"><strong>Contact</strong></a>
-                        <a class="li" href="product.html">Products</a>
-                        <label for="check" class="open-menu">≡</label>
+            <ul class='contact_nav-bar contact_ul'>
+                <li class="contact_li" style="display: flex; justify-content: space-around">
+                    <input class="contact_input" type='checkbox' id='contact_check'>
+                    <span class="contact_menu">
+                        <a class="contact_li contact_a" href="index.html">Home</a>
+                        <a class="contact_li contact_a" href="pricing.html">Pricing</a>
+                        <a class="contact_li contact_a" href="contact.html" style="background: chocolate"><strong>Contact</strong></a>
+                        <a class="contact_li contact_a" href="product.html">Products</a>
+                        <label for="contact_check" class="contact_open-menu">≡</label>
                     </span>
                 </li>
 
-                <li class="li">
-                    <label for="check" class="close-menu">≡</label>
+                <li class="contact_li">
+                    <label for="contact_check" class="contact_close-menu">≡</label>
                 </li>
             </ul>
         </nav>
     </article>
 </header>
-<section>
-    <form method="post" action="contact.html">
-        <fieldset id="form_style">
+<section class="contact_section">
+    <form class="contact_form" method="post" action="contact.html">
+        <fieldset id="contact_form_style">
             <legend><em>Contact us</em></legend>
 
             <label>
-                <input type="text" name="name" placeholder="Name">
+                <input  class="contact_input" type="text" name="name" placeholder="Name">
             </label>
 
             <label>
-                <input type="email" name="email" placeholder="Email">
+                <input  class="contact_input" type="email" name="email" placeholder="Email">
             </label>
 
             <label>
-                <textarea name="message"></textarea>
+                <textarea class="contact_textarea" name="message"></textarea>
             </label>
-            <input type="submit" name="send" value="Send">
+            <input type="submit"  class="contact_input" name="send" value="Send">
         </fieldset>
     </form>
-    <section id="products">
-        <aside id="product_1">
+    <section id="contact_products"  class="contact_section">
+        <aside id="contact_product_1">
             <article>
-                <span class="asides">
-                    <a href="https://www.inholland.nl/" style="width: 100%">
-                        <img title="skier" class="scaled_image" src="img/img_12.png" id="img_1" alt="img_12">
+                <span class="contact_asides">
+                    <a class="contact_a" href="https://www.inholland.nl/" style="width: 100%">
+                        <img title="skier" class="contact_scaled_image" src="img/img_12.png" id="contact_img_1" alt="img_12">
 
                     </a>
                 </span>
             </article>
         </aside>
-        <aside id="product_2">
+        <aside id="contact_product_2">
             <article>
-                <span class="asides"><a href="https://www.inholland.nl/"><img title="baseball player"
-                                                                              class="scaled_image" src="img/img_13.png"
-                                                                              id="img_2" alt="img_13"></a></span>
+                <span class="contact_asides"><a class="contact_a" href="https://www.inholland.nl/">
+                    <img title="skier" class="contact_scaled_image" src="img/img_13.png" id="contact_img_2" alt="img_12">
+                </a>
+                </span>
             </article>
         </aside>
-        <aside id="product_3">
+        <aside id="contact_product_3">
             <article>
-                <span class="asides"><a href="https://www.inholland.nl/"><img title="runner" class="scaled_image"
-                                                                              src="img/img_14.png" id="img_3"
+                <span class="contact_asides"><a class="contact_a" href="https://www.inholland.nl/"><img title="runner" class="contact_scaled_image"
+                                                                              src="img/img_14.png" id="contact_img_3"
                                                                               alt="img_14"></a></span>
             </article>
         </aside>
     </section>
 </section>
-<footer style="height: 100px">
+<footer style="height: 100px" class="contact_footer">
     <span></span>
-    <p>&copy; 2022 <a class="linkedin" rel="author" href="https://www.linkedin.com/in/gleb-meshkov-baba8224a/"> Gleb Meshkov</a></p>
+    <p>&copy; 2022 <a class="linkedin contact_a" rel="author" href="https://www.linkedin.com/in/gleb-meshkov-baba8224a/"> Gleb Meshkov</a></p>
 </footer>
-<section id="coockie">
+<section id="contact_coockie"  class="contact_section">
     <p>Cookie statement</p>
 </section>
 </body>
